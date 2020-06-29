@@ -98,7 +98,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #a2a2a2;
+		color: #6d6d6d;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -122,7 +122,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #787878;
+		color: #626262;
 		font-weight: 400;
 	}
 
@@ -135,7 +135,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #787878;
+		color: #525252;
 		font-weight: 400;
 		line-height: 1em;
 		margin: 0 0 1em 0;
@@ -2188,17 +2188,18 @@ input, select, textarea {
 			}
 
 		.image.avatar {
-			border-radius: 100%;
+			border-radius: 150%;
+            
 		}
 
 			.image.avatar:before {
 				display: none;
 			}
 
-			.image.avatar img {
-				border-radius: 100%;
-				width: 100%;
-			}
+            .image.avatar img {
+                border-radius: 150%;
+                width: 150%;
+            }
 
 /* List */
 
@@ -2686,7 +2687,7 @@ input, select, textarea {
 		}
 
 		#header h1 {
-			color: rgba(255, 255, 255, 0.5);
+			color: #dcdcdc;
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
@@ -2704,7 +2705,7 @@ input, select, textarea {
 	}
 
 		#footer .icons a {
-			color: rgba(255, 255, 255, 0.4);
+			color: #dcdcdc;
 		}
 
 	#footer .copyright {
