@@ -144,21 +144,54 @@
 					<section id="three">
 						<h2>Get In Touch</h2>
 						<div class="row">
-							<div class="col-8 col-12-small">
-								<form action="mailto:jacques.louis.fracchia@gmail.com" method="post" enctype="text/plain">
-									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-									</div>
+                            <div class="col-8 col-12-small">
+                                <form method="POST" action="assets/message.php">
+                                    <div class="row gtr-uniform gtr-50">
+                                        <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+                                        <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+                                        <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                                    </div>
                                     <div>
                                         <h4></h4>
                                         <ul class="actions">
-                                            <li><input type="submit" value="Send Message" /></li>
+                                            <li><input type="submit" value="Send Message" name="submit"/></li>
                                         </ul>
                                     </div>
                                 </form>
-							</div>
+
+                                <!--- 
+                                <script type="text/javascript" src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+                                <script type="text/javascript">
+
+                                    $('.button').click(function () {
+                                        $.ajax({
+                                            type: 'POST',
+                                            url: 'assets/message.php',
+                                            data: {
+
+                                                message: $("#message").val(),
+                                                email: $("#email").val(),
+                                                name: $("#name").val()
+                                            },
+                                            success: function (data) {
+                                                alert("worked");
+
+                                            },
+                                            error: function(data) {
+                                                alert("error");
+                                            }
+                                        });
+                                        /*
+                                        $.post(ajaxurl, data, function() {
+                                            alert("success");
+                                        });
+                                        */
+                                    });
+
+                                </script>
+                                --->
+
+                            </div>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
 									<li>
